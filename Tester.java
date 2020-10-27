@@ -22,5 +22,6 @@ public class Tester {
                   { -5, -2,  2, -9 }
                };
         System.out.println(Arrays.toString(ArrayOps.sumRows(D)));
+        System.out.println(Arrays.toString(ArrayOps.largestInRows(D)));
     }
 }

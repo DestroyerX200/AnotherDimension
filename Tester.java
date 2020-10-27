@@ -21,8 +21,23 @@ public class Tester {
                   {  7, -2,  2,  1 },
                   { -5, -2,  2, -9 }
                };
+        int[][] E = { {  1,  2, 3, 4 },
+   					{  2, 3,  4,  1 },
+   					{ 3, 4,  1, 2 } };
+
+   		int[][] F = { {  1,  1, 1 },
+   					{  2, 2, 2 },
+   					{ 3,  3, 3 } };
+
         System.out.println(Arrays.toString(ArrayOps.sumRows(D)));
         System.out.println(Arrays.toString(ArrayOps.largestInRows(D)));
         System.out.println(ArrayOps.sum(D));
+
+        System.out.println(Arrays.toString(ArrayOps.sumCols(D)));
+
+        System.out.println(ArrayOps.isRowMagic(D));
+        System.out.println(ArrayOps.isRowMagic(E));
+        System.out.println(ArrayOps.isRowMagic(F));
+
     }
 }
